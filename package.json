@@ -22,8 +22,6 @@
 		"build": "react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"eslint": "eslint .",
-		"eslint:fix": "eslint --fix .",
 		"format": "prettier --write \"**/*.+(ts|tsx|js|jsx|json|yml|yaml|css|md|vue)\""
 	},
 	"husky": {
@@ -33,7 +31,6 @@
 	},
 	"lint-staged": {
 		"*.+(js|jsx|ts|tsx)": [
-			"npm run eslint:fix",
 			"prettier --write",
 			"git add"
 		],
