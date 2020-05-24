@@ -1,11 +1,13 @@
 # Create React App example with Material-UI, TypeScript, Redux and Routing
 
-This is a new version with React Hooks, Material-UI 4 and React-Redux 7 (with hooks!). We use this template for all our new projects. If you want to bootstrap a project with the classic approach without hooks but with class components, you are welcome to use the [previous version](https://github.com/innFactory/create-react-app-material-typescript-redux/tree/v1).
+This is a Boilerplate/Template for a react project with React Hooks, Material-UI 4 and React-Redux 7 (with hooks!).
 
-<img width="100%" src="screenshot.png" alt="example"/>
+<img width="100%" src="Screenshot-light.png" alt="example"/>
+<img width="100%" src="Screenshot-dark.png" alt="example"/>
 
 Inspired by:
 
+-   [Create React App example with Material-UI, TypeScript, Redux and Routing](https://github.com/innFactory/create-react-app-material-typescript-redux)
 -   [Material-UI](https://github.com/mui-org/material-ui)
 -   [react-redux-typescript-boilerplate](https://github.com/rokoroku/react-redux-typescript-boilerplate)
 
@@ -21,12 +23,14 @@ Inspired by:
 -   [x] [Redux DevTools Extension](https://github.com/zalmoxisus/redux-devtools-extension)
 -   [x] [TodoMVC example](http://todomvc.com)
 -   [x] PWA Support
+-   [x] [Husky](https://www.npmjs.com/package/husky)
 
 ## Roadmap
 
 -   [x] Make function based components and use hooks for state etc.
 -   [x] Implement [Material-UIs new styling solution](https://material-ui.com/css-in-js/basics/) based on hooks
 -   [x] use react-redux hooks
+-   [x] Setup Material UI custom styling soluton with TypeScript, with setup for dynamic theme switching with Redux
 -   [ ] Hot Reloading -> Waiting for official support of react-scripts
 
 ## How to use
@@ -34,8 +38,7 @@ Inspired by:
 Download or clone this repo
 
 ```bash
-git clone https://github.com/innFactory/create-react-app-material-typescript-redux
-cd create-react-app-material-typescript-redux
+git clone https://github.com/arkajyotiMukherjee/-template-Create-React-App-with-Material-UI-TypeScript-Redux-and-Routing.git
 ```
 
 Install it and run:
@@ -71,23 +74,12 @@ registerServiceWorker();
    },
 ```
 
-## Enable project snippets [OPTIONAL]
-
-Just install following extension:
-
-<img width="70%" src="vscode_snippet0.png" alt="Project Snippet"/>
-
-After that you can start to type `fcomp` (_for function component_) and you get a template for a new component.
-
-<img width="70%" src="vscode_snippet1.png" alt="Project Snippet"/>
-<img width="70%" src="vscode_snippet2.png" alt="Project Snippet"/>
-
 ## The idea behind the example
 
-This example demonstrate how you can use [Create React App](https://github.com/facebookincubator/create-react-app) with [TypeScript](https://github.com/Microsoft/TypeScript).
+This example demonstrate how you can use [Create React App](https://github.com/facebookincubator/create-react-app) with [TypeScript](https://github.com/Microsoft/TypeScript) and add easy theme customonization with [Material UI](https://github.com/mui-org/material-ui).
 
 ## Contributors
 
--   [Anton Spöck](https://github.com/spoeck)
+-   [Arkajyoti Mukherjee](https://github.com/arkajyotiMukherjee)
 
-Powered by [innFactory](https://innfactory.de/)
+Big thanks to [innFactory](https://innfactory.de/)

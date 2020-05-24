@@ -1,9 +1,9 @@
 // prettier-ignore
 import { Button, Dialog, DialogActions, DialogTitle, TextField } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
-import { useActions } from "../actions";
-import * as TodoActions from "../actions/todo";
+import { useActions } from "../../redux/actions";
+import * as TodoActions from "../../redux/actions/todo";
+import { useStyles } from "./styles";
 
 interface Props {
 	open: boolean;
@@ -43,17 +43,14 @@ export function TodoDialog(props: Props) {
 				className={classes.textField}
 			/>
 			<DialogActions>
-				<Button color="primary" onClick={handleClose}>
+				<Button
+					color="primary"
+					onClick={handleClose}
+					className={classes.button}
+				>
 					OK
 				</Button>
 			</DialogActions>
 		</Dialog>
 	);
 }
-
-const useStyles = makeStyles({
-	textField: {
-		width: "80%",
-		margin: 20,
-	},
-});

@@ -1,10 +1,9 @@
 import { Button, Grid, Typography } from "@material-ui/core";
-import { Theme } from "@material-ui/core/styles";
-import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
-import { TodoDialog, TodoTable } from "../components";
+import { TodoDialog, TodoTable } from "../../components";
+import { useStyles } from "./styles";
 
-export function TodoPage() {
+export default function TodoPage() {
 	const classes = useStyles();
 	const [open, setOpen] = React.useState(false);
 
@@ -42,24 +41,3 @@ export function TodoPage() {
 		</Grid>
 	);
 }
-
-const useStyles = makeStyles((theme: Theme) => ({
-	root: {
-		padding: 20,
-		[theme.breakpoints.down("md")]: {
-			paddingTop: 50,
-			paddingLeft: 15,
-			paddingRight: 15,
-		},
-	},
-
-	buttonContainer: {
-		width: "100%",
-		display: "flex",
-		justifyContent: "flex-end",
-	},
-
-	button: {
-		marginBottom: 15,
-	},
-}));

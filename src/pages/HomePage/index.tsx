@@ -1,11 +1,11 @@
 import { Button, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
 import { useSelector } from "react-redux";
-import { HomeBox } from "../components";
-import { RootState } from "../reducers";
+import { HomeBox } from "../../components";
+import { RootState } from "../../redux/reducers";
+import { useStyles } from "./styles";
 
-export function HomePage() {
+export default function HomePage() {
 	const classes = useStyles();
 	const [boxColor, setBoxColor] = React.useState("red");
 	const todoList = useSelector((state: RootState) => state.todoList);
@@ -24,7 +24,7 @@ export function HomePage() {
 					className={classes.button}
 					onClick={onButtonClick}
 					variant="outlined"
-					color="primary"
+					color="secondary"
 				>
 					Change Color
 				</Button>
@@ -32,26 +32,3 @@ export function HomePage() {
 		</div>
 	);
 }
-
-const useStyles = makeStyles({
-	root: {
-		height: "100%",
-		textAlign: "center",
-		paddingTop: 20,
-		paddingLeft: 15,
-		paddingRight: 15,
-	},
-
-	centerContainer: {
-		flex: 1,
-		height: "90%",
-		display: "flex",
-		alignItems: "center",
-		justifyContent: "center",
-		flexDirection: "column",
-	},
-
-	button: {
-		marginTop: 20,
-	},
-});

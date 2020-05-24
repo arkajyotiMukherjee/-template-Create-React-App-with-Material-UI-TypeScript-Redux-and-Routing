@@ -1,13 +1,13 @@
 // prettier-ignore
 import { Checkbox, IconButton, Paper, Table, TableBody, TableCell, TableHead, TableRow } from "@material-ui/core";
 import DeleteIcon from "@material-ui/icons/Delete";
-import { makeStyles } from "@material-ui/styles";
 import * as React from "react";
 import { useSelector } from "react-redux";
-import { useActions } from "../actions";
-import * as TodoActions from "../actions/todo";
-import { Todo } from "../model";
-import { RootState } from "../reducers";
+import { useActions } from "../../redux/actions";
+import * as TodoActions from "../../redux/actions/todo";
+import { Todo } from "../../redux/model";
+import { RootState } from "../../redux/reducers";
+import { useStyles } from "./styles";
 
 export function TodoTable() {
 	const classes = useStyles();
@@ -38,7 +38,7 @@ export function TodoTable() {
 							<TableRow
 								key={n.id}
 								hover
-								onClick={event => onRowClick(n)}
+								onClick={(event) => onRowClick(n)}
 							>
 								<TableCell padding="none">
 									<Checkbox checked={n.completed} />
@@ -52,7 +52,9 @@ export function TodoTable() {
 											todoActions.deleteTodo(n.id)
 										}
 									>
-										<DeleteIcon />
+										<DeleteIcon
+											className={classes.button}
+										/>
 									</IconButton>
 								</TableCell>
 							</TableRow>
@@ -63,14 +65,3 @@ export function TodoTable() {
 		</Paper>
 	);
 }
-
-const useStyles = makeStyles({
-	paper: {
-		width: "100%",
-		minWidth: 260,
-		display: "inline-block",
-	},
-	table: {
-		width: "100%",
-	},
-});
