@@ -1,5 +1,3 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
 	AppBar,
 	IconButton,
@@ -8,14 +6,15 @@ import {
 	useMediaQuery,
 } from "@material-ui/core";
 import { Theme } from "@material-ui/core/styles";
-import MenuIcon from "@material-ui/icons/Menu";
 import Brightness7 from "@material-ui/icons/Brightness7";
+import MenuIcon from "@material-ui/icons/Menu";
 import NightsStay from "@material-ui/icons/NightsStay";
-
+import React from "react";
+import { useSelector } from "react-redux";
 import { useActions } from "../../redux/actions";
 import * as ThemeActions from "../../redux/actions/theme";
-import { useStyles } from "./styles";
 import { RootState } from "../../redux/reducers";
+import { useStyles } from "./styles";
 
 interface ToggleProps {
 	handleDrawerToggle: (event: React.MouseEvent<HTMLButtonElement>) => void;

@@ -1,8 +1,7 @@
 import { CssBaseline } from "@material-ui/core";
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import { Breakpoint } from "@material-ui/core/styles/createBreakpoints";
 import { ThemeOptions } from "@material-ui/core/styles/createMuiTheme";
-import { ThemeProvider } from "@material-ui/styles";
 import * as React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "./redux/reducers";
@@ -80,12 +79,6 @@ const darktheme = customTheme({
 			light: "#323232",
 			main: "#2C2C2C",
 			dark: "#121212",
-			contrastText: "#fff",
-		},
-		secondary: {
-			light: "#ff5e50",
-			main: "#e41e26",
-			dark: "#a90000",
 			contrastText: "#fff",
 		},
 		background: {

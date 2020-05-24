@@ -1,5 +1,3 @@
-import React from "react";
-import { useSelector } from "react-redux";
 import {
 	Divider,
 	Drawer as DrawerMui,
@@ -9,10 +7,11 @@ import {
 	ListItemIcon,
 	ListItemText,
 } from "@material-ui/core";
-
+import HomeIcon from "@material-ui/icons/Home";
+import React from "react";
+import { useSelector } from "react-redux";
 import { history } from "../../redux/configureStore";
 import { RootState } from "../../redux/reducers";
-import HomeIcon from "@material-ui/icons/Home";
 import { TodoIcon } from "../TodoIcon";
 import { useStyles } from "./styles";
 

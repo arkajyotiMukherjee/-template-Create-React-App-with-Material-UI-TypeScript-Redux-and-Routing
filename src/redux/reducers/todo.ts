@@ -1,4 +1,4 @@
-import { TodoAction, TodoActions, Todo } from "../model";
+import { Todo, TodoAction, TodoActions } from "../model";
 import createReducer from "./createReducer";
 
 const initialState: Todo[] = [];

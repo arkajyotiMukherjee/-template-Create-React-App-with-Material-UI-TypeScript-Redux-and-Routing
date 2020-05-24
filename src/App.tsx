@@ -1,9 +1,9 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Router, Switch } from "react-router-dom";
-import { history } from "./redux/configureStore";
-import { withTheme } from "./withTheme";
 import { useStyles } from "./App-styles";
 import { AppDrawer, Header, Loader } from "./components";
+import { history } from "./redux/configureStore";
+import { withTheme } from "./withTheme";
 
 const HomePage = lazy(() => import("./pages/HomePage"));
 const TodoPage = lazy(() => import("./pages/TodoPage"));
