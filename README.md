@@ -43,6 +43,10 @@ Download or clone this repo
 git clone https://github.com/arkajyotiMukherjee/-template-Create-React-App-with-Material-UI-TypeScript-Redux-and-Routing.git
 ```
 
+or use this as a template:
+
+More information from Github, [here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template).
+
 Install it and run:
 
 ```bash
