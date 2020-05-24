@@ -2,6 +2,8 @@
 
 This is a Boilerplate/Template for a react project with React Hooks, Material-UI 4 and React-Redux 7 (with hooks!).
 
+[Preview Deployed website](https://silly-engelbart-cadbeb.netlify.app/)
+
 <img width="100%" src="Screenshot-light.png" alt="example"/>
 <img width="100%" src="Screenshot-dark.png" alt="example"/>
 
@@ -46,6 +48,14 @@ Install it and run:
 ```bash
 npm i
 npm start
+```
+
+Build it and serve:
+
+```bash
+npm run build
+npm install -g serve
+serve -s build
 ```
 
 ## Enable PWA ServiceWorker [OPTIONAL]
